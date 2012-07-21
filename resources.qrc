@@ -9,6 +9,5 @@
         <file>images/export.png</file>
         <file>images/ZoomIn.png</file>
         <file>images/ZoomOut.png</file>
-        <file>data/univlexique.txt</file>
     </qresource>
 </RCC>

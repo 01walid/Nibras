@@ -33,40 +33,6 @@ void MainWindow::makeDBConnection()
             return;
         }
     }
-
-    /*
-        QFile file(":/data/univlexique.txt");
-        file.open(QFile::ReadOnly);
-        QString queries = file.readAll();
-
-        db = QSqlDatabase::addDatabase("QSQLITE");
-
-        db.setDatabaseName(":memory:");
-
-        if(!db.open())
-        {
-            QMessageBox::critical(this, tr("Error"), tr("Could not open database!"));
-            return;
-        }
-        else
-        {
-            QStringList queriesList = queries.split(';');
-            QSqlQuery query;
-            bool ret;
-            foreach(const QString onequery, queriesList)
-            {
-                if(!onequery.isEmpty())
-                {
-                    ret = query.exec(onequery.trimmed());
-                    if(!ret)
-                    {
-                        QMessageBox::critical(this, tr("Error"), query.lastError().text());
-                        return;
-                    }
-                }
-            }
-            query.clear();
-        }*/
 }
 
 void MainWindow::on_actionExit_triggered()
