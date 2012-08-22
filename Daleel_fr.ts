@@ -4,447 +4,334 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.ui" line="14"/>
-        <source>MainWindow</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.ui" line="186"/>
+        <location filename="mainwindow.ui" line="190"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Welcome to Daleel!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="226"/>
+        <location filename="mainwindow.ui" line="230"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Choose a letter:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="262"/>
+        <location filename="mainwindow.ui" line="266"/>
         <source>س</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="281"/>
+        <location filename="mainwindow.ui" line="285"/>
         <source>ز</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="300"/>
+        <location filename="mainwindow.ui" line="304"/>
         <source>ر</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="319"/>
+        <location filename="mainwindow.ui" line="323"/>
         <source>ذ</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="338"/>
+        <location filename="mainwindow.ui" line="342"/>
         <source>د</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="357"/>
+        <location filename="mainwindow.ui" line="361"/>
         <source>خ</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="376"/>
+        <location filename="mainwindow.ui" line="380"/>
         <source>ح</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="395"/>
+        <location filename="mainwindow.ui" line="399"/>
         <source>ج</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="414"/>
+        <location filename="mainwindow.ui" line="418"/>
         <source>ث</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="433"/>
+        <location filename="mainwindow.ui" line="437"/>
         <source>ت</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="452"/>
+        <location filename="mainwindow.ui" line="456"/>
         <source>ب</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="471"/>
+        <location filename="mainwindow.ui" line="475"/>
         <source>أ</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="524"/>
+        <location filename="mainwindow.ui" line="528"/>
         <source>م</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="543"/>
+        <location filename="mainwindow.ui" line="547"/>
         <source>ل</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="562"/>
+        <location filename="mainwindow.ui" line="566"/>
         <source>ك</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="581"/>
+        <location filename="mainwindow.ui" line="585"/>
         <source>ق</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="600"/>
+        <location filename="mainwindow.ui" line="604"/>
         <source>ف</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="619"/>
+        <location filename="mainwindow.ui" line="623"/>
         <source>غ</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="638"/>
+        <location filename="mainwindow.ui" line="642"/>
         <source>ع</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="657"/>
+        <location filename="mainwindow.ui" line="661"/>
         <source>ظ</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="676"/>
+        <location filename="mainwindow.ui" line="680"/>
         <source>ط</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="695"/>
+        <location filename="mainwindow.ui" line="699"/>
         <source>ض</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="714"/>
+        <location filename="mainwindow.ui" line="718"/>
         <source>ص</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="733"/>
+        <location filename="mainwindow.ui" line="737"/>
         <source>ش</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="786"/>
+        <location filename="mainwindow.ui" line="790"/>
         <source>ي</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="805"/>
+        <location filename="mainwindow.ui" line="809"/>
         <source>و</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="824"/>
+        <location filename="mainwindow.ui" line="828"/>
         <source>ه</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="843"/>
+        <location filename="mainwindow.ui" line="847"/>
         <source>ن</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="935"/>
+        <location filename="mainwindow.ui" line="942"/>
         <source>Search here (example: Write)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="982"/>
+        <location filename="mainwindow.ui" line="989"/>
         <source>Show Alphabet +</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="1008"/>
+        <location filename="mainwindow.ui" line="1015"/>
         <source>عربي</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1018"/>
+        <location filename="mainwindow.ui" line="1025"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="1028"/>
+        <location filename="mainwindow.ui" line="1035"/>
         <source>Français</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1062"/>
+        <location filename="mainwindow.ui" line="1074"/>
         <source>Arabic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1067"/>
+        <location filename="mainwindow.ui" line="1069"/>
         <source>French</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1117"/>
+        <location filename="mainwindow.ui" line="14"/>
+        <source>Nibras</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="1124"/>
         <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1125"/>
+        <location filename="mainwindow.ui" line="1132"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1131"/>
+        <location filename="mainwindow.ui" line="1138"/>
         <source>View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1137"/>
+        <location filename="mainwindow.ui" line="1144"/>
         <source>Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1143"/>
+        <location filename="mainwindow.ui" line="1150"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1192"/>
+        <location filename="mainwindow.ui" line="1205"/>
         <source>print</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1197"/>
+        <location filename="mainwindow.ui" line="1210"/>
         <source>exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1206"/>
+        <location filename="mainwindow.ui" line="1219"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1215"/>
+        <location filename="mainwindow.ui" line="1228"/>
         <source>Fonts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1220"/>
+        <location filename="mainwindow.ui" line="1233"/>
         <source>preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1225"/>
+        <location filename="mainwindow.ui" line="1238"/>
         <source>About the program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1230"/>
+        <location filename="mainwindow.ui" line="1243"/>
         <source>Manual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1235"/>
+        <location filename="mainwindow.ui" line="1248"/>
         <source>About Supreme Council of the Arabic language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1244"/>
+        <location filename="mainwindow.ui" line="1257"/>
         <source>Zoom in</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1253"/>
+        <location filename="mainwindow.ui" line="1266"/>
         <source>Zoom out</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1258"/>
+        <location filename="mainwindow.ui" line="1271"/>
         <source>Check for update...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1263"/>
+        <location filename="mainwindow.ui" line="1276"/>
         <source>Suggest New...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1272"/>
-        <location filename="mainwindow.ui" line="1275"/>
+        <location filename="mainwindow.ui" line="1285"/>
+        <location filename="mainwindow.ui" line="1288"/>
         <source>Export To PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="32"/>
+        <location filename="mainwindow.cpp" line="34"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="32"/>
+        <location filename="mainwindow.cpp" line="34"/>
         <source>Could not open database!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="49"/>
+        <location filename="mainwindow.cpp" line="43"/>
+        <source>&lt;html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="51"/>
         <source>Nibras search result for the term: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="284"/>
+        <location filename="mainwindow.cpp" line="289"/>
         <source>Show alphabet +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="292"/>
+        <location filename="mainwindow.cpp" line="297"/>
         <source>Hide alphabet -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="323"/>
+        <location filename="mainwindow.cpp" line="328"/>
         <source>Preview before printing of the search result for the term: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="338"/>
+        <location filename="mainwindow.cpp" line="343"/>
         <source>Page: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="363"/>
+        <location filename="mainwindow.cpp" line="368"/>
         <source>Export to PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="363"/>
+        <location filename="mainwindow.cpp" line="368"/>
         <source>[nibras] </source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SendMail</name>
-    <message>
-        <location filename="sendmail.ui" line="14"/>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="21"/>
-        <source>Suggest new term</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="26"/>
-        <source>General suggestion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="31"/>
-        <source>Bug report</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="67"/>
-        <source>Term in English:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="86"/>
-        <source>Content:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="93"/>
-        <source>Term in French:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="100"/>
-        <source>Your email (optional):</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="107"/>
-        <source>Your name (optional):</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="120"/>
-        <source>Term in Arabic:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="160"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.ui" line="167"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="62"/>
-        <source>[Nibras] </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="81"/>
-        <source>&lt;br/&gt;&lt;p&gt;Name: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="84"/>
-        <source>&lt;br/&gt;Email: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="89"/>
-        <source>&lt;br/&gt;Arabic Term: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="90"/>
-        <source>&lt;br/&gt;French Term: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="91"/>
-        <source>&lt;br/&gt;English Term: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="97"/>
-        <source>Content:&lt;br/&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="108"/>
-        <source>Succes!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="108"/>
-        <source>Email sent successfully, Thank You!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="114"/>
-        <source>Fail</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sendmail.cpp" line="114"/>
-        <source>Failed sending email, check you internet connection.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -460,7 +347,7 @@
     <name>Updates</name>
     <message>
         <location filename="updates.ui" line="26"/>
-        <source>Dialog</source>
+        <source>About Nibras</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -512,12 +399,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="updates.cpp" line="47"/>
-        <source>Error parsing the XML file.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="updates.cpp" line="48"/>
-        <source>Couldn&apos;t open example.xml</source>
+        <source>Error parsing the XML file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

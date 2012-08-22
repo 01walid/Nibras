@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed Aug 22 08:40:18 2012
-**      by: Qt User Interface Compiler version 4.8.1
+** Created: Wed 22. Aug 16:22:49 2012
+**      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -130,13 +130,14 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(743, 432);
+        MainWindow->resize(792, 432);
         MainWindow->setStyleSheet(QString::fromUtf8("QFrame {\n"
 "border: none;\n"
 "}\n"
+"\n"
 "#baseFrame {\n"
 "	  background: #414141;\n"
-" border-left: 1px solid #4b4b4b;\n"
+"	border: none;\n"
 "}\n"
 "\n"
 "#frameTop{\n"
@@ -184,9 +185,9 @@ public:
 "    background-color: #d2d2d2;\n"
 "    color: black;\n"
 "    margin: 0px;\n"
-"	padding: "
-                        "0px;\n"
-"    text-align: center;\n"
+"	padding: 0px;\n"
+"    "
+                        "text-align: center;\n"
 "    font-size: 12px;\n"
 "    border: 1px solid #7b7b7b;\n"
 "	border-bottom: none;\n"
@@ -223,6 +224,10 @@ public:
 "}\n"
 "#showAlphabetButton:hover, #ArButton:hover, #FRButton:hover{\n"
 "color: #fbba1b;\n"
+"}\n"
+"\n"
+"#mainToolBar {\n"
+" border: none;\n"
 "}"));
         actionPrint = new QAction(MainWindow);
         actionPrint->setObjectName(QString::fromUtf8("actionPrint"));
@@ -752,7 +757,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 743, 21));
+        menuBar->setGeometry(QRect(0, 0, 792, 21));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuEdit = new QMenu(menuBar);
@@ -786,9 +791,12 @@ public:
         menuBar->addAction(menuHelp->menuAction());
         menuFile->addSeparator();
         menuFile->addAction(actionPrint);
+        menuFile->addAction(actionExport_To_PDF);
         menuFile->addAction(actionExit);
         menuEdit->addAction(actionCopy);
         menuView->addAction(actionFonts);
+        menuView->addAction(actionZoom_in);
+        menuView->addAction(actionZoom_out);
         menuTools->addAction(actionPreferences);
         menuHelp->addAction(actionSuggest_New);
         menuHelp->addAction(actionAbout_the_program);
@@ -809,7 +817,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Nibras", 0, QApplication::UnicodeUTF8));
         actionPrint->setText(QApplication::translate("MainWindow", "print", 0, QApplication::UnicodeUTF8));
         actionExit->setText(QApplication::translate("MainWindow", "exit", 0, QApplication::UnicodeUTF8));
         actionCopy->setText(QApplication::translate("MainWindow", "Copy", 0, QApplication::UnicodeUTF8));

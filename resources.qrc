@@ -9,5 +9,6 @@
         <file>images/export.png</file>
         <file>images/ZoomIn.png</file>
         <file>images/ZoomOut.png</file>
+        <file>images/SplashScreen.png</file>
     </qresource>
 </RCC>

@@ -6,20 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>743</width>
+    <width>792</width>
     <height>432</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Nibras</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QFrame {
 border: none;
 }
+
 #baseFrame {
 	  background: #414141;
- border-left: 1px solid #4b4b4b;
+	border: none;
 }
 
 #frameTop{
@@ -105,6 +106,10 @@ border: none;
 }
 #showAlphabetButton:hover, #ArButton:hover, #FRButton:hover{
 color: #fbba1b;
+}
+
+#mainToolBar {
+ border: none;
 }</string>
   </property>
   <widget class="QWidget" name="centralWidget">
@@ -1111,7 +1116,7 @@ color: #fbba1b;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>743</width>
+     <width>792</width>
      <height>21</height>
     </rect>
    </property>
@@ -1121,6 +1126,7 @@ color: #fbba1b;
     </property>
     <addaction name="separator"/>
     <addaction name="actionPrint"/>
+    <addaction name="actionExport_To_PDF"/>
     <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -1134,6 +1140,8 @@ color: #fbba1b;
      <string>View</string>
     </property>
     <addaction name="actionFonts"/>
+    <addaction name="actionZoom_in"/>
+    <addaction name="actionZoom_out"/>
    </widget>
    <widget class="QMenu" name="menuTools">
     <property name="title">

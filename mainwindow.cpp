@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent) :
     makeDBConnection();
     ui->keyboardFrame->setHidden(true);
     initAlphabet();
+
+    on_ArButton_clicked(); // Load Arabic by default
 }
 
 MainWindow::~MainWindow()
@@ -38,10 +40,10 @@ void MainWindow::makeDBConnection()
 QString MainWindow::generateHeader()
 {
     QString html =
-            "<html>"
+            tr("<html>") +
             "<head>"
                 " <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />"
-                "<title>Invoice</title>"
+                "<title>[Nibras]</title>"
             "</head>"
             "<body >"
                 "<div id=\"header\">"
@@ -348,22 +350,48 @@ QString MainWindow::generateFooter()
 
 void MainWindow::on_actionExport_To_PDF_triggered()
 {
-    textPrinter = new TextPrinter(this);
-    textPrinter->setHeaderSize(20);
-    textPrinter->setFooterSize(19);
-    textPrinter->setSpacing(0);
 
-    textPrinter->setPageSize(QPrinter::A4);
-    textPrinter->setLeftMargin(3);
-    textPrinter->setTopMargin(2);
-    textPrinter->setRightMargin(7);
-    textPrinter->setBottomMargin(5);
-    textPrinter->pageSize();
-    generateBody();
+    QString path = QFileDialog::getSaveFileName(this, tr("Export to HTML"), tr("[Nibras] ") +
+                                                ui->searchLineEdit->text().trimmed(), "HTML (*.html)");
+    if(!path.isEmpty())
+    {
+        // header
+        QString html =
+                tr("<html>") +
+                "<head>"
+                    " <meta http-equiv=\"Content-Type\" content=\"text/html; charset=Windows-1256\" />"
+                "<title>[Nibras]</title>"
+                "</head>"
+                "<body >"
+                    "<div id=\"header\">"
+                        "<p align=\"center\">"
+                        + tr("Nibras search result for the term: ") + ui->searchLineEdit->text() +
+                        " </p>"
+                        "<br />"
+                        "<br />"
+                    "</div>";
 
-    textPrinter->setHeaderText(generateHeader());
-    textPrinter->setFooterText(generateFooter());
-    textPrinter->exportPdf(document, tr("Export to PDF"), tr("[nibras] ") + ui->searchLineEdit->text().trimmed());
+        //body
+        generateBody();
+        QString body = document->toHtml();
+        body.remove(0, body.indexOf("<table"));
+        body.remove(body.indexOf("</body>"), body.length() - body.indexOf("</html>") + 7);
+        html += body.toUtf8();
+
+        // footer
+        html += "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">"
+                    "<tr>"
+                        "<td><p align=\"left\">" + QDate::currentDate().toString("ddd MMMM d yy") + "</p></td>"
+                    "</tr>"
+                    "</table>"
+                "</body>"
+                "</html>";
+
+        QFile file(path);
+        file.open(QIODevice::WriteOnly | QIODevice::Text);
+        QTextStream out(&file);
+        out << html;
+    }
 }
 
 
@@ -408,6 +436,10 @@ void MainWindow::on_FRButton_clicked()
     qApp->setLayoutDirection(Qt::LeftToRight);
     this->addToolBar(Qt::LeftToolBarArea, ui->mainToolBar);
 
+    ui->baseFrame->setStyleSheet("#baseFrame {"
+                                 "background: #414141;"
+                                 "border-left: 1px solid #4b4b4b;}");
+
     // keep the layout direction of the following widgets to:
     ui->keyboardFrame->setLayoutDirection(Qt::RightToLeft);
     ui->tableWidget->setLayoutDirection(Qt::LeftToRight);
@@ -423,6 +455,9 @@ void MainWindow::on_ArButton_clicked()
     loadLanguage("ar");
     qApp->setLayoutDirection(Qt::RightToLeft);
     this->addToolBar(Qt::RightToolBarArea, ui->mainToolBar);
+    ui->baseFrame->setStyleSheet("#baseFrame {"
+                                 "background: #414141;"
+                                 "border-right: 1px solid #4b4b4b;}");
 
     // keep the layout direction of the following widgets to:
     ui->keyboardFrame->setLayoutDirection(Qt::LeftToRight);

@@ -32,6 +32,7 @@ void Updates::xmlDownloadFinished(QNetworkReply *reply)
     {
         QMessageBox::warning(this, tr("Coudln't check for updates!"), tr("Server not found, check your internet connection!"));
         ui->pushButton->setText(tr("Check again"));
+        ui->pushButton->setEnabled(true);
         return;
     }
 
@@ -45,7 +46,9 @@ void Updates::xmlDownloadFinished(QNetworkReply *reply)
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QMessageBox::critical(this,
                               tr("Error parsing the XML file."),
-                              tr("Couldn't open example.xml"));
+                              tr("Error parsing the XML file."));
+        ui->pushButton->setText(tr("Check again"));
+        ui->pushButton->setEnabled(true);
         return;
     }
 
@@ -75,6 +78,8 @@ void Updates::xmlDownloadFinished(QNetworkReply *reply)
             QMessageBox::critical(this,
             tr("Error"), xmlFile.errorString(),
             QMessageBox::Ok);
+            ui->pushButton->setText(tr("Check again"));
+            ui->pushButton->setEnabled(true);
             return;
     }
 
