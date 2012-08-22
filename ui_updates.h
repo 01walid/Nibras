@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'updates.ui'
 **
-** Created: Sat 21. Jul 15:38:25 2012
-**      by: Qt User Interface Compiler version 4.8.0
+** Created: Wed Aug 22 08:40:18 2012
+**      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/

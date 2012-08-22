@@ -20,10 +20,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    updates.cpp
+    updates.cpp \
+    printing/textprinter.cpp
 
 HEADERS  += mainwindow.h \
-    updates.h
+    updates.h \
+    printing/textprinter.h
 
 FORMS    += mainwindow.ui \
     updates.ui
