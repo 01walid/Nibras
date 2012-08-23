@@ -45,11 +45,13 @@ private slots:
 
     void on_actionPrint_triggered();
 
-    void on_actionExport_To_PDF_triggered();
+    void on_actionExport_To_HTML_triggered();
 
     void on_FRButton_clicked();
 
     void on_ArButton_clicked();
+
+    void on_actionPrintPreview_triggered();
 
 private:
     Ui::MainWindow *ui;

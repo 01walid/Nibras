@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed 22. Aug 16:22:49 2012
+** Created: Thu 23. Aug 01:47:43 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -47,7 +47,8 @@ public:
     QAction *actionZoom_out;
     QAction *actionCheck_for_update;
     QAction *actionSuggest_New;
-    QAction *actionExport_To_PDF;
+    QAction *actionExport_To_HTML;
+    QAction *actionPrintPreview;
     QWidget *centralWidget;
     QHBoxLayout *horizontalLayout_12;
     QFrame *baseFrame;
@@ -99,8 +100,6 @@ public:
     QHBoxLayout *horizontalLayout_6;
     QPushButton *yaaButton;
     QPushButton *wawButton;
-    QPushButton *hhaaButton;
-    QPushButton *noonButton;
     QSpacerItem *horizontalSpacer_8;
     QFrame *searchFrame;
     QHBoxLayout *horizontalLayout_10;
@@ -268,11 +267,16 @@ public:
         actionCheck_for_update->setObjectName(QString::fromUtf8("actionCheck_for_update"));
         actionSuggest_New = new QAction(MainWindow);
         actionSuggest_New->setObjectName(QString::fromUtf8("actionSuggest_New"));
-        actionExport_To_PDF = new QAction(MainWindow);
-        actionExport_To_PDF->setObjectName(QString::fromUtf8("actionExport_To_PDF"));
+        actionExport_To_HTML = new QAction(MainWindow);
+        actionExport_To_HTML->setObjectName(QString::fromUtf8("actionExport_To_HTML"));
         QIcon icon5;
         icon5.addFile(QString::fromUtf8(":/images/export.png"), QSize(), QIcon::Normal, QIcon::Off);
-        actionExport_To_PDF->setIcon(icon5);
+        actionExport_To_HTML->setIcon(icon5);
+        actionPrintPreview = new QAction(MainWindow);
+        actionPrintPreview->setObjectName(QString::fromUtf8("actionPrintPreview"));
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/images/searching.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionPrintPreview->setIcon(icon6);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         horizontalLayout_12 = new QHBoxLayout(centralWidget);
@@ -599,22 +603,6 @@ public:
 
         horizontalLayout_6->addWidget(wawButton);
 
-        hhaaButton = new QPushButton(keyboardFrame);
-        hhaaButton->setObjectName(QString::fromUtf8("hhaaButton"));
-        hhaaButton->setFont(font);
-        hhaaButton->setCursor(QCursor(Qt::PointingHandCursor));
-        hhaaButton->setFlat(true);
-
-        horizontalLayout_6->addWidget(hhaaButton);
-
-        noonButton = new QPushButton(keyboardFrame);
-        noonButton->setObjectName(QString::fromUtf8("noonButton"));
-        noonButton->setFont(font);
-        noonButton->setCursor(QCursor(Qt::PointingHandCursor));
-        noonButton->setFlat(true);
-
-        horizontalLayout_6->addWidget(noonButton);
-
 
         horizontalLayout_9->addLayout(horizontalLayout_6);
 
@@ -666,8 +654,6 @@ public:
         searchButton->setMinimumSize(QSize(0, 30));
         searchButton->setMaximumSize(QSize(16777215, 30));
         searchButton->setCursor(QCursor(Qt::PointingHandCursor));
-        QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/images/searching.png"), QSize(), QIcon::Normal, QIcon::Off);
         searchButton->setIcon(icon6);
         searchButton->setIconSize(QSize(32, 32));
         searchButton->setFlat(true);
@@ -791,7 +777,7 @@ public:
         menuBar->addAction(menuHelp->menuAction());
         menuFile->addSeparator();
         menuFile->addAction(actionPrint);
-        menuFile->addAction(actionExport_To_PDF);
+        menuFile->addAction(actionExport_To_HTML);
         menuFile->addAction(actionExit);
         menuEdit->addAction(actionCopy);
         menuView->addAction(actionFonts);
@@ -805,8 +791,9 @@ public:
         menuHelp->addAction(actionCheck_for_update);
         mainToolBar->addAction(actionFonts);
         mainToolBar->addAction(actionCopy);
+        mainToolBar->addAction(actionPrintPreview);
         mainToolBar->addAction(actionPrint);
-        mainToolBar->addAction(actionExport_To_PDF);
+        mainToolBar->addAction(actionExport_To_HTML);
         mainToolBar->addAction(actionZoom_in);
         mainToolBar->addAction(actionZoom_out);
 
@@ -830,40 +817,42 @@ public:
         actionZoom_out->setText(QApplication::translate("MainWindow", "Zoom out", 0, QApplication::UnicodeUTF8));
         actionCheck_for_update->setText(QApplication::translate("MainWindow", "Check for update...", 0, QApplication::UnicodeUTF8));
         actionSuggest_New->setText(QApplication::translate("MainWindow", "Suggest New...", 0, QApplication::UnicodeUTF8));
-        actionExport_To_PDF->setText(QApplication::translate("MainWindow", "Export To PDF", 0, QApplication::UnicodeUTF8));
+        actionExport_To_HTML->setText(QApplication::translate("MainWindow", "Export To HTML", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        actionExport_To_PDF->setToolTip(QApplication::translate("MainWindow", "Export To PDF", 0, QApplication::UnicodeUTF8));
+        actionExport_To_HTML->setToolTip(QApplication::translate("MainWindow", "Export To HTML", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_TOOLTIP
+        actionPrintPreview->setText(QApplication::translate("MainWindow", "PrintPreview", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_TOOLTIP
+        actionPrintPreview->setToolTip(QApplication::translate("MainWindow", "Print preview", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         label->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Welcome to Daleel!</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Choose a letter:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        seenButton->setText(QApplication::translate("MainWindow", "\330\263", 0, QApplication::UnicodeUTF8));
-        zayButton->setText(QApplication::translate("MainWindow", "\330\262", 0, QApplication::UnicodeUTF8));
-        raaButton->setText(QApplication::translate("MainWindow", "\330\261", 0, QApplication::UnicodeUTF8));
-        thalButton->setText(QApplication::translate("MainWindow", "\330\260", 0, QApplication::UnicodeUTF8));
-        dalButton->setText(QApplication::translate("MainWindow", "\330\257", 0, QApplication::UnicodeUTF8));
-        khaaButton->setText(QApplication::translate("MainWindow", "\330\256", 0, QApplication::UnicodeUTF8));
-        haaButton->setText(QApplication::translate("MainWindow", "\330\255", 0, QApplication::UnicodeUTF8));
-        jeemButton->setText(QApplication::translate("MainWindow", "\330\254", 0, QApplication::UnicodeUTF8));
-        thaaButton->setText(QApplication::translate("MainWindow", "\330\253", 0, QApplication::UnicodeUTF8));
-        taaButton->setText(QApplication::translate("MainWindow", "\330\252", 0, QApplication::UnicodeUTF8));
-        baaButton->setText(QApplication::translate("MainWindow", "\330\250", 0, QApplication::UnicodeUTF8));
-        alifButton->setText(QApplication::translate("MainWindow", "\330\243", 0, QApplication::UnicodeUTF8));
-        meemButton->setText(QApplication::translate("MainWindow", "\331\205", 0, QApplication::UnicodeUTF8));
-        lamButton->setText(QApplication::translate("MainWindow", "\331\204", 0, QApplication::UnicodeUTF8));
-        kaafButton->setText(QApplication::translate("MainWindow", "\331\203", 0, QApplication::UnicodeUTF8));
-        qaafButton->setText(QApplication::translate("MainWindow", "\331\202", 0, QApplication::UnicodeUTF8));
-        faaButton->setText(QApplication::translate("MainWindow", "\331\201", 0, QApplication::UnicodeUTF8));
-        ghaynButton->setText(QApplication::translate("MainWindow", "\330\272", 0, QApplication::UnicodeUTF8));
-        aynButton->setText(QApplication::translate("MainWindow", "\330\271", 0, QApplication::UnicodeUTF8));
-        dhhadButton->setText(QApplication::translate("MainWindow", "\330\270", 0, QApplication::UnicodeUTF8));
-        ttaaButton->setText(QApplication::translate("MainWindow", "\330\267", 0, QApplication::UnicodeUTF8));
-        dhadButton->setText(QApplication::translate("MainWindow", "\330\266", 0, QApplication::UnicodeUTF8));
-        sadButton->setText(QApplication::translate("MainWindow", "\330\265", 0, QApplication::UnicodeUTF8));
-        sheenButton->setText(QApplication::translate("MainWindow", "\330\264", 0, QApplication::UnicodeUTF8));
-        yaaButton->setText(QApplication::translate("MainWindow", "\331\212", 0, QApplication::UnicodeUTF8));
-        wawButton->setText(QApplication::translate("MainWindow", "\331\210", 0, QApplication::UnicodeUTF8));
-        hhaaButton->setText(QApplication::translate("MainWindow", "\331\207", 0, QApplication::UnicodeUTF8));
-        noonButton->setText(QApplication::translate("MainWindow", "\331\206", 0, QApplication::UnicodeUTF8));
+        seenButton->setText(QApplication::translate("MainWindow", "A", 0, QApplication::UnicodeUTF8));
+        zayButton->setText(QApplication::translate("MainWindow", "B", 0, QApplication::UnicodeUTF8));
+        raaButton->setText(QApplication::translate("MainWindow", "C", 0, QApplication::UnicodeUTF8));
+        thalButton->setText(QApplication::translate("MainWindow", "D", 0, QApplication::UnicodeUTF8));
+        dalButton->setText(QApplication::translate("MainWindow", "E", 0, QApplication::UnicodeUTF8));
+        khaaButton->setText(QApplication::translate("MainWindow", "F", 0, QApplication::UnicodeUTF8));
+        haaButton->setText(QApplication::translate("MainWindow", "G", 0, QApplication::UnicodeUTF8));
+        jeemButton->setText(QApplication::translate("MainWindow", "H", 0, QApplication::UnicodeUTF8));
+        thaaButton->setText(QApplication::translate("MainWindow", "I", 0, QApplication::UnicodeUTF8));
+        taaButton->setText(QApplication::translate("MainWindow", "j", 0, QApplication::UnicodeUTF8));
+        baaButton->setText(QApplication::translate("MainWindow", "K", 0, QApplication::UnicodeUTF8));
+        alifButton->setText(QApplication::translate("MainWindow", "L", 0, QApplication::UnicodeUTF8));
+        meemButton->setText(QApplication::translate("MainWindow", "M", 0, QApplication::UnicodeUTF8));
+        lamButton->setText(QApplication::translate("MainWindow", "N", 0, QApplication::UnicodeUTF8));
+        kaafButton->setText(QApplication::translate("MainWindow", "O", 0, QApplication::UnicodeUTF8));
+        qaafButton->setText(QApplication::translate("MainWindow", "P", 0, QApplication::UnicodeUTF8));
+        faaButton->setText(QApplication::translate("MainWindow", "Q", 0, QApplication::UnicodeUTF8));
+        ghaynButton->setText(QApplication::translate("MainWindow", "U", 0, QApplication::UnicodeUTF8));
+        aynButton->setText(QApplication::translate("MainWindow", "R", 0, QApplication::UnicodeUTF8));
+        dhhadButton->setText(QApplication::translate("MainWindow", "S", 0, QApplication::UnicodeUTF8));
+        ttaaButton->setText(QApplication::translate("MainWindow", "T", 0, QApplication::UnicodeUTF8));
+        dhadButton->setText(QApplication::translate("MainWindow", "V", 0, QApplication::UnicodeUTF8));
+        sadButton->setText(QApplication::translate("MainWindow", "W", 0, QApplication::UnicodeUTF8));
+        sheenButton->setText(QApplication::translate("MainWindow", "X", 0, QApplication::UnicodeUTF8));
+        yaaButton->setText(QApplication::translate("MainWindow", "X", 0, QApplication::UnicodeUTF8));
+        wawButton->setText(QApplication::translate("MainWindow", "Z", 0, QApplication::UnicodeUTF8));
         searchLineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Search here (example: Write)", 0, QApplication::UnicodeUTF8));
         searchButton->setText(QString());
         showAlphabetButton->setText(QApplication::translate("MainWindow", "Show Alphabet +", 0, QApplication::UnicodeUTF8));

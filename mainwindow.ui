@@ -264,7 +264,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>س</string>
+                   <string>A</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -283,7 +283,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ز</string>
+                   <string>B</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -302,7 +302,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ر</string>
+                   <string>C</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -321,7 +321,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ذ</string>
+                   <string>D</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -340,7 +340,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>د</string>
+                   <string>E</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -359,7 +359,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>خ</string>
+                   <string>F</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -378,7 +378,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ح</string>
+                   <string>G</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -397,7 +397,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ج</string>
+                   <string>H</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -416,7 +416,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ث</string>
+                   <string>I</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -435,7 +435,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ت</string>
+                   <string>j</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -454,7 +454,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ب</string>
+                   <string>K</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -473,7 +473,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>أ</string>
+                   <string>L</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -526,7 +526,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>م</string>
+                   <string>M</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -545,7 +545,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ل</string>
+                   <string>N</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -564,7 +564,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ك</string>
+                   <string>O</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -583,7 +583,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ق</string>
+                   <string>P</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -602,7 +602,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ف</string>
+                   <string>Q</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -621,7 +621,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>غ</string>
+                   <string>U</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -640,7 +640,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ع</string>
+                   <string>R</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -659,7 +659,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ظ</string>
+                   <string>S</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -678,7 +678,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ط</string>
+                   <string>T</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -697,7 +697,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ض</string>
+                   <string>V</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -716,7 +716,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ص</string>
+                   <string>W</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -735,7 +735,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ش</string>
+                   <string>X</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -788,7 +788,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>ي</string>
+                   <string>X</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -807,45 +807,7 @@ color: #fbba1b;
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="text">
-                   <string>و</string>
-                  </property>
-                  <property name="flat">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="hhaaButton">
-                  <property name="font">
-                   <font>
-                    <family>Times New Roman</family>
-                    <pointsize>-1</pointsize>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="text">
-                   <string>ه</string>
-                  </property>
-                  <property name="flat">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="noonButton">
-                  <property name="font">
-                   <font>
-                    <family>Times New Roman</family>
-                    <pointsize>-1</pointsize>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="text">
-                   <string>ن</string>
+                   <string>Z</string>
                   </property>
                   <property name="flat">
                    <bool>true</bool>
@@ -1126,7 +1088,7 @@ color: #fbba1b;
     </property>
     <addaction name="separator"/>
     <addaction name="actionPrint"/>
-    <addaction name="actionExport_To_PDF"/>
+    <addaction name="actionExport_To_HTML"/>
     <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -1194,8 +1156,9 @@ color: #fbba1b;
    </attribute>
    <addaction name="actionFonts"/>
    <addaction name="actionCopy"/>
+   <addaction name="actionPrintPreview"/>
    <addaction name="actionPrint"/>
-   <addaction name="actionExport_To_PDF"/>
+   <addaction name="actionExport_To_HTML"/>
    <addaction name="actionZoom_in"/>
    <addaction name="actionZoom_out"/>
   </widget>
@@ -1280,16 +1243,28 @@ color: #fbba1b;
     <string>Suggest New...</string>
    </property>
   </action>
-  <action name="actionExport_To_PDF">
+  <action name="actionExport_To_HTML">
    <property name="icon">
     <iconset resource="resources.qrc">
      <normaloff>:/images/export.png</normaloff>:/images/export.png</iconset>
    </property>
    <property name="text">
-    <string>Export To PDF</string>
+    <string>Export To HTML</string>
    </property>
    <property name="toolTip">
-    <string>Export To PDF</string>
+    <string>Export To HTML</string>
+   </property>
+  </action>
+  <action name="actionPrintPreview">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/searching.png</normaloff>:/images/searching.png</iconset>
+   </property>
+   <property name="text">
+    <string>PrintPreview</string>
+   </property>
+   <property name="toolTip">
+    <string>Print preview</string>
    </property>
   </action>
  </widget>

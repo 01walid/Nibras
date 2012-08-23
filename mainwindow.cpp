@@ -213,8 +213,11 @@ void MainWindow::on_searchButton_clicked()
 void MainWindow::on_actionZoom_in_triggered()
 {
     QFont font = ui->tableWidget->font();
-    font.setPointSize(font.pointSize() - 1);
-    ui->tableWidget->resizeRowsToContents();
+    font.setPointSize(font.pointSize() + 1);
+    ui->tableWidget->setFont(font);
+
+    for(int i = 0; i < ui->tableWidget->rowCount(); i++)
+        ui->tableWidget->setRowHeight(i, font.pointSize() * 3);
 }
 
 
@@ -222,7 +225,10 @@ void MainWindow::on_actionZoom_out_triggered()
 {
     QFont font = ui->tableWidget->font();
     font.setPointSize(font.pointSize() - 1);
-    ui->tableWidget->resizeRowsToContents();
+    ui->tableWidget->setFont(font);
+
+    for(int i = 0; i < ui->tableWidget->rowCount(); i++)
+        ui->tableWidget->setRowHeight(i, font.pointSize() * 3);
 }
 
 
@@ -250,7 +256,7 @@ void MainWindow::on_actionSuggest_New_triggered()
 
 void MainWindow::setButtonContentToSearch(QAbstractButton *button)
 {
-    // The query concerns alphabet, it has to show results that start with the given letter
+    // The query concerns alphabet, it has to show results that *start* with the given letter
     alphabetQuery = true;
 
     /*
@@ -289,8 +295,6 @@ void MainWindow::on_showAlphabetButton_clicked()
         ui->showAlphabetButton->setText(tr("Show alphabet +"));
         alphabetIsShown = false;
     }
-
-
     else // then show it
     {
         ui->keyboardFrame->setHidden(false);
@@ -301,11 +305,35 @@ void MainWindow::on_showAlphabetButton_clicked()
 
 void MainWindow::on_actionCopy_triggered()
 {
-    if(ui->tableWidget->hasFocus() && ui->tableWidget->rowCount() != 0)
+    QClipboard *clipboard = QApplication::clipboard();
+    QString terms;
+    int rows = ui->tableWidget->selectedItems().count();
+
+    // if the user has selected specific cells, then only copy selected cells
+    if(rows != 0)
     {
-        QClipboard *clipboard = QApplication::clipboard();
-        clipboard->setText(ui->tableWidget->currentItem()->text());
+        for(int i = 0; i < ui->tableWidget->rowCount(); i++)
+        {
+            if(ui->tableWidget->item(i, 0)->isSelected() ||
+               ui->tableWidget->item(i, 1)->isSelected())
+            {
+                terms += ui->tableWidget->item(i, 0)->text();
+                terms += "    " + ui->tableWidget->item(i, 1)->text() + "\r\n";
+            }
+        }
     }
+    else // copy the whole table
+    {
+        for(int i = 0; i < ui->tableWidget->rowCount(); i++)
+        {
+            terms += ui->tableWidget->item(i, 0)->text();
+            terms += "    ";
+            terms += ui->tableWidget->item(i, 1)->text();
+            terms += "\r\n";
+        }
+    }
+
+    clipboard->setText(terms);
 }
 
 void MainWindow::on_actionPrint_triggered()
@@ -325,9 +353,8 @@ void MainWindow::on_actionPrint_triggered()
 
     textPrinter->setHeaderText(generateHeader());
     textPrinter->setFooterText(generateFooter());
-    textPrinter->preview(document, tr("Preview before printing of the search result for the term: ")
+    textPrinter->print(document, tr("Preview before printing of the search result for the term: ")
                          + ui->searchLineEdit->text().trimmed());
-
 }
 
 
@@ -348,7 +375,7 @@ QString MainWindow::generateFooter()
     return html;
 }
 
-void MainWindow::on_actionExport_To_PDF_triggered()
+void MainWindow::on_actionExport_To_HTML_triggered()
 {
 
     QString path = QFileDialog::getSaveFileName(this, tr("Export to HTML"), tr("[Nibras] ") +
@@ -439,15 +466,6 @@ void MainWindow::on_FRButton_clicked()
     ui->baseFrame->setStyleSheet("#baseFrame {"
                                  "background: #414141;"
                                  "border-left: 1px solid #4b4b4b;}");
-
-    // keep the layout direction of the following widgets to:
-    ui->keyboardFrame->setLayoutDirection(Qt::RightToLeft);
-    ui->tableWidget->setLayoutDirection(Qt::LeftToRight);
-
-
-    // the French alphabet has only 26 chars, so we have to hide the 2 last buttons
-    ui->wawButton->setVisible(false);
-    ui->yaaButton->setVisible(false);
 }
 
 void MainWindow::on_ArButton_clicked()
@@ -459,14 +477,28 @@ void MainWindow::on_ArButton_clicked()
                                  "background: #414141;"
                                  "border-right: 1px solid #4b4b4b;}");
 
-    // keep the layout direction of the following widgets to:
+    // keep the layout direction of the following widgets to LTR
     ui->keyboardFrame->setLayoutDirection(Qt::LeftToRight);
     ui->tableWidget->setLayoutDirection(Qt::LeftToRight);
+}
 
-    /*
-     * the Arabic alphabet has 28 chars, so we have to ensure
-     * the visibility of the 2 last buttons in case they were hidden
-     */
-    ui->wawButton->setVisible(true);
-    ui->yaaButton->setVisible(true);
+void MainWindow::on_actionPrintPreview_triggered()
+{
+    textPrinter = new TextPrinter(this);
+    textPrinter->setHeaderSize(20);
+    textPrinter->setFooterSize(19);
+    textPrinter->setSpacing(0);
+
+    textPrinter->setPageSize(QPrinter::A4);
+    textPrinter->setLeftMargin(3);
+    textPrinter->setTopMargin(2);
+    textPrinter->setRightMargin(7);
+    textPrinter->setBottomMargin(5);
+    textPrinter->pageSize();
+    generateBody();
+
+    textPrinter->setHeaderText(generateHeader());
+    textPrinter->setFooterText(generateFooter());
+    textPrinter->preview(document, tr("Preview before printing of the search result for the term: ")
+                         + ui->searchLineEdit->text().trimmed());
 }
