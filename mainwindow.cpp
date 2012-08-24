@@ -9,7 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QHeaderView *header = ui->tableWidget->horizontalHeader();
     header->setResizeMode(QHeaderView::Stretch);
-    ui->tableWidget->setAlternatingRowColors(true);
     makeDBConnection();
     ui->keyboardFrame->setHidden(true);
     initAlphabet();
@@ -189,25 +188,30 @@ void MainWindow::on_searchButton_clicked()
                         "WHERE FRENCH LIKE \"%%1%\" OR ARABIC LIKE \"%%1%\" COLLATE NOCASE").arg(arg));
     }
     int i = 0;
+
+    // in case the user pressed on zoom in/out let's keep the same rows height
+    QFont font = ui->tableWidget->font();
+
     while(query.next())
     {
 
-        ui->tableWidget->insertRow(i);       
+        ui->tableWidget->insertRow(i);
+        // keep the row heigth to fit the font size
+        ui->tableWidget->setRowHeight(i, font.pointSize() * 3);
 
         ui->tableWidget->setItem(i, 0, new QTableWidgetItem());
         ui->tableWidget->item(i, 0)->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
-        ui->tableWidget->item(i, 0)->setTextAlignment(Qt::AlignLeft);
+        ui->tableWidget->item(i, 0)->setTextAlignment(Qt::AlignVCenter|Qt::AlignLeft);
         ui->tableWidget->item(i, 0)->setText(query.value(0).toString());
 
         ui->tableWidget->setItem(i, 1, new QTableWidgetItem());
         ui->tableWidget->item(i, 1)->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
-        ui->tableWidget->item(i, 1)->setTextAlignment(Qt::AlignRight);
+        ui->tableWidget->item(i, 1)->setTextAlignment(Qt::AlignVCenter|Qt::AlignRight);
         ui->tableWidget->item(i, 1)->setText(query.value(1).toString());
 
         i++;
     }
 }
-
 
 
 void MainWindow::on_actionZoom_in_triggered()
@@ -245,13 +249,14 @@ void MainWindow::on_actionFonts_triggered()
                 &ok, ui->tableWidget->font(), this);
     if (ok) {
         ui->tableWidget->setFont(font);
-        ui->tableWidget->resizeRowsToContents();
+        for(int i = 0; i < ui->tableWidget->rowCount(); i++)
+            ui->tableWidget->setRowHeight(i, font.pointSize() * 3);
     }
 }
 
 void MainWindow::on_actionSuggest_New_triggered()
 {
-    QDesktopServices::openUrl(QUrl("http://01walid.github.com/Nibras/"));
+    QDesktopServices::openUrl(QUrl("http://nibras.sourceforge.net/"));
 }
 
 void MainWindow::setButtonContentToSearch(QAbstractButton *button)
@@ -335,6 +340,7 @@ void MainWindow::on_actionCopy_triggered()
 
     clipboard->setText(terms);
 }
+
 
 void MainWindow::on_actionPrint_triggered()
 {
@@ -457,6 +463,29 @@ void MainWindow::changeEvent(QEvent *event)
     }
 }
 
+void MainWindow::contextMenuEvent(QContextMenuEvent *event)
+{
+    if(ui->tableWidget->underMouse() && ui->tableWidget->rowCount() != 0)
+    {
+        QMenu context(ui->tableWidget);
+
+        QAction* copyAction = new QAction(tr("Copy"), &context);
+        connect(copyAction, SIGNAL(triggered()), this, SLOT(copyCell()));
+
+        QAction* copyRowAction = new QAction(tr("Copy Row"), &context);
+        connect(copyRowAction, SIGNAL(triggered()), this, SLOT(copyRow()));
+
+        QAction* copyTable = new QAction(tr("Copy the whole table"), &context);
+        connect(copyTable, SIGNAL(triggered()), this, SLOT(copyTable()));
+
+        context.addAction(copyAction);
+        context.addAction(copyRowAction);
+        context.addSeparator();
+        context.addAction(copyTable);
+        context.exec(event->globalPos());
+    }
+}
+
 void MainWindow::on_FRButton_clicked()
 {
     loadLanguage("fr");
@@ -501,4 +530,44 @@ void MainWindow::on_actionPrintPreview_triggered()
     textPrinter->setFooterText(generateFooter());
     textPrinter->preview(document, tr("Preview before printing of the search result for the term: ")
                          + ui->searchLineEdit->text().trimmed());
+}
+
+void MainWindow::on_actionAbout_the_program_triggered()
+{
+    About about;
+    about.exec();
+}
+
+void MainWindow::copyCell()
+{
+    QClipboard *clipboard = QApplication::clipboard();
+    clipboard->setText(ui->tableWidget->currentItem()->text());
+}
+
+void MainWindow::copyRow()
+{
+    QClipboard *clipboard = QApplication::clipboard();
+    QString terms;
+
+    int i = ui->tableWidget->currentItem()->row();
+    terms += ui->tableWidget->item(i, 0)->text();
+    terms += "    " + ui->tableWidget->item(i, 1)->text() + "\r\n";
+
+    clipboard->setText(terms);
+}
+
+void MainWindow::copyTable()
+{
+    QClipboard *clipboard = QApplication::clipboard();
+    QString terms;
+
+    for(int i = 0; i < ui->tableWidget->rowCount(); i++)
+    {
+        terms += ui->tableWidget->item(i, 0)->text();
+        terms += "    ";
+        terms += ui->tableWidget->item(i, 1)->text();
+        terms += "\r\n";
+    }
+
+    clipboard->setText(terms);
 }

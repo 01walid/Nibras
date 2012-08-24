@@ -6,6 +6,7 @@
 #include <QtGui>
 #include "updates.h"
 #include "printing/textprinter.h"
+#include "about.h"
 
 namespace Ui {
 class MainWindow;
@@ -18,6 +19,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     void changeEvent(QEvent *event);
+    void contextMenuEvent(QContextMenuEvent *event);
     ~MainWindow();
     
 private slots:
@@ -52,6 +54,12 @@ private slots:
     void on_ArButton_clicked();
 
     void on_actionPrintPreview_triggered();
+
+    void on_actionAbout_the_program_triggered();
+
+    void copyCell();
+    void copyRow();
+    void copyTable();
 
 private:
     Ui::MainWindow *ui;

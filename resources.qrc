@@ -10,5 +10,8 @@
         <file>images/ZoomIn.png</file>
         <file>images/ZoomOut.png</file>
         <file>images/SplashScreen.png</file>
+        <file>images/document_print_preview.png</file>
+        <file>images/aboutImage.png</file>
+        <file>images/Nibras-Logo-transparent.png</file>
     </qresource>
 </RCC>

@@ -2,6 +2,25 @@
 <!DOCTYPE TS>
 <TS version="2.0" language="fr_FR">
 <context>
+    <name>About</name>
+    <message>
+        <location filename="about.ui" line="26"/>
+        <source>About Nibras</source>
+        <translation>A propos de Nibras</translation>
+    </message>
+    <message utf8="true">
+        <location filename="about.ui" line="88"/>
+        <source>فكرة:</source>
+        <translation>Idée:</translation>
+    </message>
+    <message utf8="true">
+        <location filename="about.ui" line="101"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;هذا الدليل موجه إلى طلبة السنة الأولى للشعب التقنية بالجامعة، ويحتوي على أهم المصطلحات والمفردات الي يصادفها في البرنامج الدراسي خلال هذه السنة المهمة.&lt;/p&gt;&lt;p&gt;ويحوي هذا المعجم على أزيد من 2160 مصطلح، نحاول بها أن نغطي مجالات الشعب التقنية في السنة الأولى جامعي.&lt;/p&gt;&lt;p&gt;موقع المشروع: &lt;a href=&quot;http://nibras.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;http://nibras.sourceforge.net&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;الإعداد:&lt;/p&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;إعداد الدليل: طه زروقي (&lt;a href=&quot;https://tahadz.wordpress.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;الموقع&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;،&lt;/span&gt;&lt;a href=&quot;mailto:taha.zerrouki@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;البريد&lt;/span&gt;&lt;/a&gt;).&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;إعداد الواجهة: زيوش وليد.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <oldsource>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;هذا الدليل موجه إلى طلبة السنة الأولى للشعب التقنية بالجامعة، ويحتوي على أهم المصطلحات والمفردات الي يصادفها في البرنامج الدراسي خلال هذه السنة المهمة.&lt;/p&gt;&lt;p&gt;ويحوي هذا المعجم على أزيد من 2160 مصطلح، نحاول بها أن نغطي مجالات الشعب التقنية في السنة الأولى جامعي.&lt;/p&gt;&lt;p&gt;موقع المشروع: &lt;a href=&quot;http://nibras.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;http://nibras.sourceforge.net&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;الإعداد:&lt;/p&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;إعداد الدليل: طه زروقي (&lt;a href=&quot;https://tahadz.wordpress.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;الموقع&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; color:#000000;&quot;&gt;،&lt;/span&gt;&lt;a href=&quot;mailto:taha.zerrouki@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;البريد&lt;/span&gt;&lt;/a&gt;).&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;إعداد الواجهة: زيوش وليد.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</oldsource>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ce guide est destiné aux étudiants de la première année universitaire sections techniques, et contient l&apos;essentiel des termes technique que l&apos;étudiant rencontre dans le programme de cette année..&lt;/p&gt;&lt;p&gt;Ce dictionnaire contient plus de 2160 termes couvrant les domaines techniques de la première année universitaire.&lt;/p&gt;&lt;p&gt;Site du projet: &lt;a href=&quot;http://nibras.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;http://nibras.sourceforge.net&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Réalisé par:&lt;/p&gt;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Guide: Taha Zerrouk (&lt;a href=&quot;https://tahadz.wordpress.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;Siteweb&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;,&lt;/span&gt;&lt;a href=&quot;mailto:taha.zerrouki@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fbbd1e;&quot;&gt;email&lt;/span&gt;&lt;/a&gt;).&lt;/li&gt;&lt;li style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Interface: Ziouche Walid.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <location filename="mainwindow.ui" line="191"/>
@@ -9,7 +28,7 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Bienvenue à Daleel!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="231"/>
+        <location filename="mainwindow.ui" line="421"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Choose a letter:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Choisis une lettre:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -126,37 +145,37 @@
         <translation type="obsolete">ن</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="905"/>
+        <location filename="mainwindow.ui" line="314"/>
         <source>Search here (example: Write)</source>
         <translation>Chercher ici (exemple: Write)</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="952"/>
+        <location filename="mainwindow.ui" line="361"/>
         <source>Show Alphabet +</source>
         <translation>Affichier l&apos;alphabet +</translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="978"/>
+        <location filename="mainwindow.ui" line="214"/>
         <source>عربي</source>
         <translation>عربي</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="988"/>
+        <location filename="mainwindow.ui" line="224"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt; - &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message utf8="true">
-        <location filename="mainwindow.ui" line="998"/>
+        <location filename="mainwindow.ui" line="234"/>
         <source>Français</source>
         <translation>Français</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1037"/>
+        <location filename="mainwindow.ui" line="1051"/>
         <source>Arabic</source>
         <translation>Arabic</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1032"/>
+        <location filename="mainwindow.ui" line="1046"/>
         <source>French</source>
         <translation>French</translation>
     </message>
@@ -166,288 +185,297 @@
         <translation>Nibras</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="267"/>
+        <location filename="mainwindow.ui" line="457"/>
         <source>A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="286"/>
+        <location filename="mainwindow.ui" line="476"/>
         <source>B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="305"/>
+        <location filename="mainwindow.ui" line="495"/>
         <source>C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="324"/>
+        <location filename="mainwindow.ui" line="514"/>
         <source>D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="343"/>
+        <location filename="mainwindow.ui" line="533"/>
         <source>E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="362"/>
+        <location filename="mainwindow.ui" line="552"/>
         <source>F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="381"/>
+        <location filename="mainwindow.ui" line="571"/>
         <source>G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="400"/>
+        <location filename="mainwindow.ui" line="590"/>
         <source>H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="419"/>
+        <location filename="mainwindow.ui" line="609"/>
         <source>I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="438"/>
+        <location filename="mainwindow.ui" line="628"/>
         <source>j</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="457"/>
+        <location filename="mainwindow.ui" line="647"/>
         <source>K</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="476"/>
+        <location filename="mainwindow.ui" line="666"/>
         <source>L</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="529"/>
+        <location filename="mainwindow.ui" line="719"/>
         <source>M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="548"/>
+        <location filename="mainwindow.ui" line="738"/>
         <source>N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="567"/>
+        <location filename="mainwindow.ui" line="757"/>
         <source>O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="586"/>
+        <location filename="mainwindow.ui" line="776"/>
         <source>P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="605"/>
+        <location filename="mainwindow.ui" line="795"/>
         <source>Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="624"/>
+        <location filename="mainwindow.ui" line="814"/>
         <source>U</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="643"/>
+        <location filename="mainwindow.ui" line="833"/>
         <source>R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="662"/>
+        <location filename="mainwindow.ui" line="852"/>
         <source>S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="681"/>
+        <location filename="mainwindow.ui" line="871"/>
         <source>T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="700"/>
+        <location filename="mainwindow.ui" line="890"/>
         <source>V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="719"/>
+        <location filename="mainwindow.ui" line="909"/>
         <source>W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="738"/>
-        <location filename="mainwindow.ui" line="791"/>
+        <location filename="mainwindow.ui" line="928"/>
+        <location filename="mainwindow.ui" line="981"/>
         <source>X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="810"/>
+        <location filename="mainwindow.ui" line="1000"/>
         <source>Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1087"/>
+        <location filename="mainwindow.ui" line="1101"/>
         <source>File</source>
         <translation>Fichier</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1096"/>
+        <location filename="mainwindow.ui" line="1111"/>
         <source>Edit</source>
         <translation>Edition</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1102"/>
+        <location filename="mainwindow.ui" line="1117"/>
         <source>View</source>
         <translation>Affichage</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1110"/>
         <source>Tools</source>
-        <translation>Outils</translation>
+        <translation type="obsolete">Outils</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1116"/>
+        <location filename="mainwindow.ui" line="1126"/>
         <source>Help</source>
         <translation>Aide</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1172"/>
+        <location filename="mainwindow.ui" line="1180"/>
         <source>print</source>
         <translation>Imprimer</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1177"/>
+        <location filename="mainwindow.ui" line="1185"/>
         <source>exit</source>
         <translation>Quitter</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1186"/>
+        <location filename="mainwindow.ui" line="1194"/>
+        <location filename="mainwindow.cpp" line="472"/>
         <source>Copy</source>
         <translation>Copier</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1195"/>
+        <location filename="mainwindow.ui" line="1203"/>
         <source>Fonts</source>
         <translation>Police</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1200"/>
+        <location filename="mainwindow.ui" line="1208"/>
         <source>preferences</source>
         <translation>Préférences</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1205"/>
+        <location filename="mainwindow.ui" line="1213"/>
         <source>About the program</source>
         <translation>A propos du programme</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1210"/>
         <source>Manual</source>
-        <translation>Manuel</translation>
+        <translation type="obsolete">Manuel</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1215"/>
+        <location filename="mainwindow.ui" line="1218"/>
         <source>About Supreme Council of the Arabic language</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1224"/>
+        <location filename="mainwindow.ui" line="1227"/>
         <source>Zoom in</source>
         <translation>Zoom +</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1233"/>
+        <location filename="mainwindow.ui" line="1236"/>
         <source>Zoom out</source>
         <translation>Zoom -</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1238"/>
+        <location filename="mainwindow.ui" line="1241"/>
         <source>Check for update...</source>
         <translation>Vérification des mises à jour...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1243"/>
+        <location filename="mainwindow.ui" line="1246"/>
         <source>Suggest New...</source>
         <translation>Suggérer nouveau...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="1252"/>
         <location filename="mainwindow.ui" line="1255"/>
+        <location filename="mainwindow.ui" line="1258"/>
         <source>Export To HTML</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.ui" line="1264"/>
-        <source>PrintPreview</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporter au format HTML</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1267"/>
+        <source>PrintPreview</source>
+        <translation>Aperçu Avant l&apos;impression</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="1270"/>
         <source>Print preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Aperçu Avant l&apos;impression</translation>
     </message>
     <message>
         <source>Export To PDF</source>
         <translation type="obsolete">Exporter au format PDF</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="34"/>
+        <location filename="mainwindow.cpp" line="33"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="34"/>
+        <location filename="mainwindow.cpp" line="33"/>
         <source>Could not open database!</source>
         <translation>Impossible d&apos;ouvrir la base de données!</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="43"/>
-        <location filename="mainwindow.cpp" line="387"/>
+        <location filename="mainwindow.cpp" line="42"/>
+        <location filename="mainwindow.cpp" line="393"/>
         <source>&lt;html&gt;</source>
         <translation>&lt;html&gt;</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="51"/>
-        <location filename="mainwindow.cpp" line="395"/>
+        <location filename="mainwindow.cpp" line="50"/>
+        <location filename="mainwindow.cpp" line="401"/>
         <source>Nibras search result for the term: </source>
         <translation>Résultats de recherches du terme: </translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="295"/>
+        <location filename="mainwindow.cpp" line="300"/>
         <source>Show alphabet +</source>
         <translation>Afficher l&apos;alphabet +</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="301"/>
+        <location filename="mainwindow.cpp" line="306"/>
         <source>Hide alphabet -</source>
         <translation>Masquer l&apos;alphabet -</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="356"/>
-        <location filename="mainwindow.cpp" line="502"/>
+        <location filename="mainwindow.cpp" line="362"/>
+        <location filename="mainwindow.cpp" line="531"/>
         <source>Preview before printing of the search result for the term: </source>
         <translation>Aperçu avant impression du résultat de recherche du terme: </translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="370"/>
+        <location filename="mainwindow.cpp" line="376"/>
         <source>Page: </source>
         <translation>Page:</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="381"/>
+        <location filename="mainwindow.cpp" line="387"/>
         <source>Export to HTML</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporter au format HTML</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="381"/>
+        <location filename="mainwindow.cpp" line="387"/>
         <source>[Nibras] </source>
-        <translation type="unfinished"></translation>
+        <translation>[Nibras] </translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="475"/>
+        <source>Copy Row</source>
+        <translation>Copier la ligne</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="478"/>
+        <source>Copy the whole table</source>
+        <translation>Copier tout le table</translation>
     </message>
     <message>
         <source>Export to PDF</source>
@@ -469,17 +497,21 @@
 <context>
     <name>Updates</name>
     <message>
-        <location filename="updates.ui" line="26"/>
         <source>About Nibras</source>
-        <translation>A propos de Nibras</translation>
+        <translation type="obsolete">A propos de Nibras</translation>
     </message>
     <message>
-        <location filename="updates.ui" line="54"/>
+        <location filename="updates.ui" line="26"/>
+        <source>Update</source>
+        <translation>Mise à jour</translation>
+    </message>
+    <message>
+        <location filename="updates.ui" line="68"/>
         <source>Updates allow you to: </source>
         <translation>Les mises à jour vous permettent de:</translation>
     </message>
     <message>
-        <location filename="updates.ui" line="63"/>
+        <location filename="updates.ui" line="93"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -498,12 +530,12 @@ p, li { white-space: pre-wrap; }
 &lt;li style=&quot; font-size:10pt;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:-5px; -qt-block-indent:0; text-indent:-20px;&quot;&gt;Enrichier le dictionnaire.&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="updates.ui" line="83"/>
+        <location filename="updates.ui" line="113"/>
         <source>Check now...</source>
         <translation>Vérifier maintenant...</translation>
     </message>
     <message>
-        <location filename="updates.ui" line="47"/>
+        <location filename="updates.ui" line="61"/>
         <source>Actual version:   1.0    (final)</source>
         <translation>La version actuelle:   1.0    (finale)</translation>
     </message>
@@ -513,19 +545,18 @@ p, li { white-space: pre-wrap; }
         <translation>Vérification en cours...</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="33"/>
         <source>Coudln&apos;t check for updates!</source>
-        <translation>Vérification échouée!</translation>
+        <translation type="obsolete">Vérification échouée!</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="33"/>
         <source>Server not found, check your internet connection!</source>
-        <translation>Serveur introuvable, vérifiez votre connexion internet!</translation>
+        <translation type="obsolete">Serveur introuvable, vérifiez votre connexion internet!</translation>
     </message>
     <message>
         <location filename="updates.cpp" line="34"/>
         <location filename="updates.cpp" line="50"/>
-        <location filename="updates.cpp" line="81"/>
+        <location filename="updates.cpp" line="91"/>
+        <location filename="updates.cpp" line="111"/>
         <source>Check again</source>
         <translation>Revérifier</translation>
     </message>
@@ -536,34 +567,63 @@ p, li { white-space: pre-wrap; }
         <translation>Erreur d&apos;analyse du fichier XML.</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="79"/>
+        <location filename="updates.cpp" line="33"/>
+        <location filename="updates.cpp" line="89"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="87"/>
+        <location filename="updates.cpp" line="33"/>
+        <source>Server not found, check your internet connection!
+</source>
+        <translation>Serveur introuvable, vérifiez votre connexion internet!</translation>
+    </message>
+    <message>
+        <location filename="updates.cpp" line="99"/>
         <source>Update available!</source>
         <translation>Mise à jour disponible!</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="87"/>
-        <source>New version (v %1) is available!</source>
+        <location filename="updates.cpp" line="103"/>
+        <source>New version (v %1) is available!
+</source>
         <translation>Une nouvelle version (v %1) est disponible!</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="88"/>
-        <source>No update available</source>
-        <translation>Aucune mise à jour disponible</translation>
+        <location filename="updates.cpp" line="104"/>
+        <source>Would you like to download the new version?</source>
+        <translation>Voulez-vous télécharger la nouvelle version?</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="88"/>
+        <location filename="updates.cpp" line="105"/>
+        <source>What&apos;s New: 
+</source>
+        <translation>Qoi de neuf:</translation>
+    </message>
+    <message>
+        <location filename="updates.cpp" line="120"/>
         <source>You have the latest version!
- No update available for now.</source>
+No update available for now.</source>
         <translation>Vous possèdez la dernière version!
 Pas de mise à jour disponible pour le moment.</translation>
     </message>
     <message>
-        <location filename="updates.cpp" line="91"/>
+        <source>New version (v %1) is available!</source>
+        <translation type="obsolete">Une nouvelle version (v %1) est disponible!</translation>
+    </message>
+    <message>
+        <location filename="updates.cpp" line="120"/>
+        <source>No update available</source>
+        <translation>Aucune mise à jour disponible</translation>
+    </message>
+    <message>
+        <source>You have the latest version!
+ No update available for now.</source>
+        <translation type="obsolete">Vous possèdez la dernière version!
+Pas de mise à jour disponible pour le moment.</translation>
+    </message>
+    <message>
+        <location filename="updates.cpp" line="123"/>
         <source>Check updates...</source>
         <translation>Vérifier les mises à jour...</translation>
     </message>

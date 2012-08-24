@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'updates.ui'
 **
-** Created: Wed 22. Aug 15:00:35 2012
+** Created: Fri 24. Aug 12:00:23 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -21,6 +21,7 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
+#include <QtGui/QSpacerItem>
 #include <QtGui/QTextBrowser>
 #include <QtGui/QVBoxLayout>
 
@@ -35,6 +36,7 @@ public:
     QLabel *label;
     QGroupBox *groupBox;
     QVBoxLayout *verticalLayout;
+    QSpacerItem *verticalSpacer;
     QTextBrowser *textBrowser;
     QPushButton *pushButton;
 
@@ -45,12 +47,24 @@ public:
         Updates->resize(415, 200);
         Updates->setMinimumSize(QSize(415, 200));
         Updates->setMaximumSize(QSize(415, 200));
+        Updates->setStyleSheet(QString::fromUtf8("#frame {\n"
+"	border: none;\n"
+"	background: #242424;\n"
+"}\n"
+"\n"
+"#frame QLabel {\n"
+" 	color: white;\n"
+"}\n"
+"#groupBox{\n"
+"	color: white;\n"
+"	border: 1px solid #fbba1b;\n"
+"}"));
         horizontalLayout = new QHBoxLayout(Updates);
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         frame = new QFrame(Updates);
         frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setStyleSheet(QString::fromUtf8("background: white;"));
+        frame->setStyleSheet(QString::fromUtf8(""));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         verticalLayout_2 = new QVBoxLayout(frame);
@@ -62,8 +76,13 @@ public:
 
         groupBox = new QGroupBox(frame);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setFlat(true);
         verticalLayout = new QVBoxLayout(groupBox);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer);
+
         textBrowser = new QTextBrowser(groupBox);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setStyleSheet(QString::fromUtf8("background: none;"));
@@ -90,7 +109,7 @@ public:
 
     void retranslateUi(QDialog *Updates)
     {
-        Updates->setWindowTitle(QApplication::translate("Updates", "About Nibras", 0, QApplication::UnicodeUTF8));
+        Updates->setWindowTitle(QApplication::translate("Updates", "Update", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("Updates", "Actual version:   1.0    (final)", 0, QApplication::UnicodeUTF8));
         groupBox->setTitle(QApplication::translate("Updates", "Updates allow you to: ", 0, QApplication::UnicodeUTF8));
         textBrowser->setHtml(QApplication::translate("Updates", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

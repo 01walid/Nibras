@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu 23. Aug 01:47:43 2012
+** Created: Fri 24. Aug 12:00:23 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -41,7 +41,6 @@ public:
     QAction *actionFonts;
     QAction *actionPreferences;
     QAction *actionAbout_the_program;
-    QAction *actionManual;
     QAction *actionSupreme_Council_of_the_Arabic_language;
     QAction *actionZoom_in;
     QAction *actionZoom_out;
@@ -60,6 +59,18 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *label;
     QSpacerItem *horizontalSpacer;
+    QPushButton *ArButton;
+    QLabel *label_4;
+    QPushButton *FRButton;
+    QFrame *searchFrame;
+    QHBoxLayout *horizontalLayout_10;
+    QSpacerItem *horizontalSpacer_3;
+    QHBoxLayout *horizontalLayout_3;
+    QLineEdit *searchLineEdit;
+    QPushButton *searchButton;
+    QPushButton *showAlphabetButton;
+    QSpacerItem *horizontalSpacer_2;
+    QLabel *label_2;
     QFrame *keyboardFrame;
     QVBoxLayout *verticalLayout_5;
     QLabel *label_3;
@@ -101,17 +112,6 @@ public:
     QPushButton *yaaButton;
     QPushButton *wawButton;
     QSpacerItem *horizontalSpacer_8;
-    QFrame *searchFrame;
-    QHBoxLayout *horizontalLayout_10;
-    QSpacerItem *horizontalSpacer_3;
-    QHBoxLayout *horizontalLayout_3;
-    QLineEdit *searchLineEdit;
-    QPushButton *searchButton;
-    QPushButton *showAlphabetButton;
-    QSpacerItem *horizontalSpacer_2;
-    QPushButton *ArButton;
-    QLabel *label_4;
-    QPushButton *FRButton;
     QFrame *centralFrame;
     QHBoxLayout *horizontalLayout_11;
     QTableWidget *tableWidget;
@@ -120,7 +120,6 @@ public:
     QMenu *menuFile;
     QMenu *menuEdit;
     QMenu *menuView;
-    QMenu *menuTools;
     QMenu *menuHelp;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -249,8 +248,6 @@ public:
         actionPreferences->setObjectName(QString::fromUtf8("actionPreferences"));
         actionAbout_the_program = new QAction(MainWindow);
         actionAbout_the_program->setObjectName(QString::fromUtf8("actionAbout_the_program"));
-        actionManual = new QAction(MainWindow);
-        actionManual->setObjectName(QString::fromUtf8("actionManual"));
         actionSupreme_Council_of_the_Arabic_language = new QAction(MainWindow);
         actionSupreme_Council_of_the_Arabic_language->setObjectName(QString::fromUtf8("actionSupreme_Council_of_the_Arabic_language"));
         actionZoom_in = new QAction(MainWindow);
@@ -275,7 +272,7 @@ public:
         actionPrintPreview = new QAction(MainWindow);
         actionPrintPreview->setObjectName(QString::fromUtf8("actionPrintPreview"));
         QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/images/searching.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QString::fromUtf8(":/images/document_print_preview.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionPrintPreview->setIcon(icon6);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
@@ -322,11 +319,101 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
+        ArButton = new QPushButton(frameTop);
+        ArButton->setObjectName(QString::fromUtf8("ArButton"));
+        ArButton->setCursor(QCursor(Qt::PointingHandCursor));
+        ArButton->setFlat(true);
+
+        horizontalLayout->addWidget(ArButton);
+
+        label_4 = new QLabel(frameTop);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        horizontalLayout->addWidget(label_4);
+
+        FRButton = new QPushButton(frameTop);
+        FRButton->setObjectName(QString::fromUtf8("FRButton"));
+        FRButton->setCursor(QCursor(Qt::PointingHandCursor));
+        FRButton->setFlat(true);
+
+        horizontalLayout->addWidget(FRButton);
+
 
         verticalLayout_2->addLayout(horizontalLayout);
 
 
         verticalLayout_3->addWidget(frameTop);
+
+        searchFrame = new QFrame(baseFrame);
+        searchFrame->setObjectName(QString::fromUtf8("searchFrame"));
+        QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(searchFrame->sizePolicy().hasHeightForWidth());
+        searchFrame->setSizePolicy(sizePolicy);
+        searchFrame->setMinimumSize(QSize(0, 70));
+        searchFrame->setMaximumSize(QSize(16777215, 60));
+        searchFrame->setFrameShape(QFrame::StyledPanel);
+        searchFrame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_10 = new QHBoxLayout(searchFrame);
+        horizontalLayout_10->setSpacing(6);
+        horizontalLayout_10->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        horizontalSpacer_3 = new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_10->addItem(horizontalSpacer_3);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setSpacing(0);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        searchLineEdit = new QLineEdit(searchFrame);
+        searchLineEdit->setObjectName(QString::fromUtf8("searchLineEdit"));
+        searchLineEdit->setMinimumSize(QSize(0, 30));
+        QFont font;
+        font.setPointSize(10);
+        searchLineEdit->setFont(font);
+        searchLineEdit->setLayoutDirection(Qt::LeftToRight);
+        searchLineEdit->setStyleSheet(QString::fromUtf8(""));
+
+        horizontalLayout_3->addWidget(searchLineEdit);
+
+        searchButton = new QPushButton(searchFrame);
+        searchButton->setObjectName(QString::fromUtf8("searchButton"));
+        searchButton->setMinimumSize(QSize(0, 30));
+        searchButton->setMaximumSize(QSize(16777215, 30));
+        searchButton->setCursor(QCursor(Qt::PointingHandCursor));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8(":/images/searching.png"), QSize(), QIcon::Normal, QIcon::Off);
+        searchButton->setIcon(icon7);
+        searchButton->setIconSize(QSize(32, 32));
+        searchButton->setFlat(true);
+
+        horizontalLayout_3->addWidget(searchButton);
+
+
+        horizontalLayout_10->addLayout(horizontalLayout_3);
+
+        showAlphabetButton = new QPushButton(searchFrame);
+        showAlphabetButton->setObjectName(QString::fromUtf8("showAlphabetButton"));
+        showAlphabetButton->setCursor(QCursor(Qt::PointingHandCursor));
+        showAlphabetButton->setFlat(true);
+
+        horizontalLayout_10->addWidget(showAlphabetButton);
+
+        horizontalSpacer_2 = new QSpacerItem(243, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_10->addItem(horizontalSpacer_2);
+
+        label_2 = new QLabel(searchFrame);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setMaximumSize(QSize(41, 16777215));
+        label_2->setPixmap(QPixmap(QString::fromUtf8(":/images/Nibras-Logo-transparent.png")));
+        label_2->setScaledContents(true);
+
+        horizontalLayout_10->addWidget(label_2);
+
+
+        verticalLayout_3->addWidget(searchFrame);
 
         keyboardFrame = new QFrame(baseFrame);
         keyboardFrame->setObjectName(QString::fromUtf8("keyboardFrame"));
@@ -355,9 +442,9 @@ public:
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         seenButton = new QPushButton(keyboardFrame);
         seenButton->setObjectName(QString::fromUtf8("seenButton"));
-        QFont font;
-        font.setFamily(QString::fromUtf8("Times New Roman"));
-        seenButton->setFont(font);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Times New Roman"));
+        seenButton->setFont(font1);
         seenButton->setCursor(QCursor(Qt::PointingHandCursor));
         seenButton->setFlat(true);
 
@@ -365,7 +452,7 @@ public:
 
         zayButton = new QPushButton(keyboardFrame);
         zayButton->setObjectName(QString::fromUtf8("zayButton"));
-        zayButton->setFont(font);
+        zayButton->setFont(font1);
         zayButton->setCursor(QCursor(Qt::PointingHandCursor));
         zayButton->setFlat(true);
 
@@ -373,7 +460,7 @@ public:
 
         raaButton = new QPushButton(keyboardFrame);
         raaButton->setObjectName(QString::fromUtf8("raaButton"));
-        raaButton->setFont(font);
+        raaButton->setFont(font1);
         raaButton->setCursor(QCursor(Qt::PointingHandCursor));
         raaButton->setFlat(true);
 
@@ -381,7 +468,7 @@ public:
 
         thalButton = new QPushButton(keyboardFrame);
         thalButton->setObjectName(QString::fromUtf8("thalButton"));
-        thalButton->setFont(font);
+        thalButton->setFont(font1);
         thalButton->setCursor(QCursor(Qt::PointingHandCursor));
         thalButton->setFlat(true);
 
@@ -389,7 +476,7 @@ public:
 
         dalButton = new QPushButton(keyboardFrame);
         dalButton->setObjectName(QString::fromUtf8("dalButton"));
-        dalButton->setFont(font);
+        dalButton->setFont(font1);
         dalButton->setCursor(QCursor(Qt::PointingHandCursor));
         dalButton->setFlat(true);
 
@@ -397,7 +484,7 @@ public:
 
         khaaButton = new QPushButton(keyboardFrame);
         khaaButton->setObjectName(QString::fromUtf8("khaaButton"));
-        khaaButton->setFont(font);
+        khaaButton->setFont(font1);
         khaaButton->setCursor(QCursor(Qt::PointingHandCursor));
         khaaButton->setFlat(true);
 
@@ -405,7 +492,7 @@ public:
 
         haaButton = new QPushButton(keyboardFrame);
         haaButton->setObjectName(QString::fromUtf8("haaButton"));
-        haaButton->setFont(font);
+        haaButton->setFont(font1);
         haaButton->setCursor(QCursor(Qt::PointingHandCursor));
         haaButton->setFlat(true);
 
@@ -413,7 +500,7 @@ public:
 
         jeemButton = new QPushButton(keyboardFrame);
         jeemButton->setObjectName(QString::fromUtf8("jeemButton"));
-        jeemButton->setFont(font);
+        jeemButton->setFont(font1);
         jeemButton->setCursor(QCursor(Qt::PointingHandCursor));
         jeemButton->setFlat(true);
 
@@ -421,7 +508,7 @@ public:
 
         thaaButton = new QPushButton(keyboardFrame);
         thaaButton->setObjectName(QString::fromUtf8("thaaButton"));
-        thaaButton->setFont(font);
+        thaaButton->setFont(font1);
         thaaButton->setCursor(QCursor(Qt::PointingHandCursor));
         thaaButton->setFlat(true);
 
@@ -429,7 +516,7 @@ public:
 
         taaButton = new QPushButton(keyboardFrame);
         taaButton->setObjectName(QString::fromUtf8("taaButton"));
-        taaButton->setFont(font);
+        taaButton->setFont(font1);
         taaButton->setCursor(QCursor(Qt::PointingHandCursor));
         taaButton->setFlat(true);
 
@@ -437,7 +524,7 @@ public:
 
         baaButton = new QPushButton(keyboardFrame);
         baaButton->setObjectName(QString::fromUtf8("baaButton"));
-        baaButton->setFont(font);
+        baaButton->setFont(font1);
         baaButton->setCursor(QCursor(Qt::PointingHandCursor));
         baaButton->setFlat(true);
 
@@ -445,7 +532,7 @@ public:
 
         alifButton = new QPushButton(keyboardFrame);
         alifButton->setObjectName(QString::fromUtf8("alifButton"));
-        alifButton->setFont(font);
+        alifButton->setFont(font1);
         alifButton->setCursor(QCursor(Qt::PointingHandCursor));
         alifButton->setFlat(true);
 
@@ -473,7 +560,7 @@ public:
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         meemButton = new QPushButton(keyboardFrame);
         meemButton->setObjectName(QString::fromUtf8("meemButton"));
-        meemButton->setFont(font);
+        meemButton->setFont(font1);
         meemButton->setCursor(QCursor(Qt::PointingHandCursor));
         meemButton->setFlat(true);
 
@@ -481,7 +568,7 @@ public:
 
         lamButton = new QPushButton(keyboardFrame);
         lamButton->setObjectName(QString::fromUtf8("lamButton"));
-        lamButton->setFont(font);
+        lamButton->setFont(font1);
         lamButton->setCursor(QCursor(Qt::PointingHandCursor));
         lamButton->setFlat(true);
 
@@ -489,7 +576,7 @@ public:
 
         kaafButton = new QPushButton(keyboardFrame);
         kaafButton->setObjectName(QString::fromUtf8("kaafButton"));
-        kaafButton->setFont(font);
+        kaafButton->setFont(font1);
         kaafButton->setCursor(QCursor(Qt::PointingHandCursor));
         kaafButton->setFlat(true);
 
@@ -497,7 +584,7 @@ public:
 
         qaafButton = new QPushButton(keyboardFrame);
         qaafButton->setObjectName(QString::fromUtf8("qaafButton"));
-        qaafButton->setFont(font);
+        qaafButton->setFont(font1);
         qaafButton->setCursor(QCursor(Qt::PointingHandCursor));
         qaafButton->setFlat(true);
 
@@ -505,7 +592,7 @@ public:
 
         faaButton = new QPushButton(keyboardFrame);
         faaButton->setObjectName(QString::fromUtf8("faaButton"));
-        faaButton->setFont(font);
+        faaButton->setFont(font1);
         faaButton->setCursor(QCursor(Qt::PointingHandCursor));
         faaButton->setFlat(true);
 
@@ -513,7 +600,7 @@ public:
 
         ghaynButton = new QPushButton(keyboardFrame);
         ghaynButton->setObjectName(QString::fromUtf8("ghaynButton"));
-        ghaynButton->setFont(font);
+        ghaynButton->setFont(font1);
         ghaynButton->setCursor(QCursor(Qt::PointingHandCursor));
         ghaynButton->setFlat(true);
 
@@ -521,7 +608,7 @@ public:
 
         aynButton = new QPushButton(keyboardFrame);
         aynButton->setObjectName(QString::fromUtf8("aynButton"));
-        aynButton->setFont(font);
+        aynButton->setFont(font1);
         aynButton->setCursor(QCursor(Qt::PointingHandCursor));
         aynButton->setFlat(true);
 
@@ -529,7 +616,7 @@ public:
 
         dhhadButton = new QPushButton(keyboardFrame);
         dhhadButton->setObjectName(QString::fromUtf8("dhhadButton"));
-        dhhadButton->setFont(font);
+        dhhadButton->setFont(font1);
         dhhadButton->setCursor(QCursor(Qt::PointingHandCursor));
         dhhadButton->setFlat(true);
 
@@ -537,7 +624,7 @@ public:
 
         ttaaButton = new QPushButton(keyboardFrame);
         ttaaButton->setObjectName(QString::fromUtf8("ttaaButton"));
-        ttaaButton->setFont(font);
+        ttaaButton->setFont(font1);
         ttaaButton->setCursor(QCursor(Qt::PointingHandCursor));
         ttaaButton->setFlat(true);
 
@@ -545,7 +632,7 @@ public:
 
         dhadButton = new QPushButton(keyboardFrame);
         dhadButton->setObjectName(QString::fromUtf8("dhadButton"));
-        dhadButton->setFont(font);
+        dhadButton->setFont(font1);
         dhadButton->setCursor(QCursor(Qt::PointingHandCursor));
         dhadButton->setFlat(true);
 
@@ -553,7 +640,7 @@ public:
 
         sadButton = new QPushButton(keyboardFrame);
         sadButton->setObjectName(QString::fromUtf8("sadButton"));
-        sadButton->setFont(font);
+        sadButton->setFont(font1);
         sadButton->setCursor(QCursor(Qt::PointingHandCursor));
         sadButton->setFlat(true);
 
@@ -561,7 +648,7 @@ public:
 
         sheenButton = new QPushButton(keyboardFrame);
         sheenButton->setObjectName(QString::fromUtf8("sheenButton"));
-        sheenButton->setFont(font);
+        sheenButton->setFont(font1);
         sheenButton->setCursor(QCursor(Qt::PointingHandCursor));
         sheenButton->setFlat(true);
 
@@ -589,7 +676,7 @@ public:
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         yaaButton = new QPushButton(keyboardFrame);
         yaaButton->setObjectName(QString::fromUtf8("yaaButton"));
-        yaaButton->setFont(font);
+        yaaButton->setFont(font1);
         yaaButton->setCursor(QCursor(Qt::PointingHandCursor));
         yaaButton->setFlat(true);
 
@@ -597,7 +684,7 @@ public:
 
         wawButton = new QPushButton(keyboardFrame);
         wawButton->setObjectName(QString::fromUtf8("wawButton"));
-        wawButton->setFont(font);
+        wawButton->setFont(font1);
         wawButton->setCursor(QCursor(Qt::PointingHandCursor));
         wawButton->setFlat(true);
 
@@ -616,90 +703,6 @@ public:
 
         verticalLayout_3->addWidget(keyboardFrame);
 
-        searchFrame = new QFrame(baseFrame);
-        searchFrame->setObjectName(QString::fromUtf8("searchFrame"));
-        QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(searchFrame->sizePolicy().hasHeightForWidth());
-        searchFrame->setSizePolicy(sizePolicy);
-        searchFrame->setMinimumSize(QSize(0, 70));
-        searchFrame->setMaximumSize(QSize(16777215, 60));
-        searchFrame->setFrameShape(QFrame::StyledPanel);
-        searchFrame->setFrameShadow(QFrame::Raised);
-        horizontalLayout_10 = new QHBoxLayout(searchFrame);
-        horizontalLayout_10->setSpacing(6);
-        horizontalLayout_10->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
-        horizontalSpacer_3 = new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout_10->addItem(horizontalSpacer_3);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setSpacing(0);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        searchLineEdit = new QLineEdit(searchFrame);
-        searchLineEdit->setObjectName(QString::fromUtf8("searchLineEdit"));
-        searchLineEdit->setMinimumSize(QSize(0, 30));
-        QFont font1;
-        font1.setPointSize(10);
-        searchLineEdit->setFont(font1);
-        searchLineEdit->setLayoutDirection(Qt::LeftToRight);
-        searchLineEdit->setStyleSheet(QString::fromUtf8(""));
-
-        horizontalLayout_3->addWidget(searchLineEdit);
-
-        searchButton = new QPushButton(searchFrame);
-        searchButton->setObjectName(QString::fromUtf8("searchButton"));
-        searchButton->setMinimumSize(QSize(0, 30));
-        searchButton->setMaximumSize(QSize(16777215, 30));
-        searchButton->setCursor(QCursor(Qt::PointingHandCursor));
-        searchButton->setIcon(icon6);
-        searchButton->setIconSize(QSize(32, 32));
-        searchButton->setFlat(true);
-
-        horizontalLayout_3->addWidget(searchButton);
-
-
-        horizontalLayout_10->addLayout(horizontalLayout_3);
-
-        showAlphabetButton = new QPushButton(searchFrame);
-        showAlphabetButton->setObjectName(QString::fromUtf8("showAlphabetButton"));
-        showAlphabetButton->setCursor(QCursor(Qt::PointingHandCursor));
-        showAlphabetButton->setFlat(true);
-
-        horizontalLayout_10->addWidget(showAlphabetButton);
-
-        horizontalSpacer_2 = new QSpacerItem(227, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_10->addItem(horizontalSpacer_2);
-
-        ArButton = new QPushButton(searchFrame);
-        ArButton->setObjectName(QString::fromUtf8("ArButton"));
-        ArButton->setCursor(QCursor(Qt::PointingHandCursor));
-        ArButton->setFlat(true);
-
-        horizontalLayout_10->addWidget(ArButton);
-
-        label_4 = new QLabel(searchFrame);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-
-        horizontalLayout_10->addWidget(label_4);
-
-        FRButton = new QPushButton(searchFrame);
-        FRButton->setObjectName(QString::fromUtf8("FRButton"));
-        FRButton->setCursor(QCursor(Qt::PointingHandCursor));
-        FRButton->setFlat(true);
-
-        horizontalLayout_10->addWidget(FRButton);
-
-        showAlphabetButton->raise();
-        ArButton->raise();
-        FRButton->raise();
-        label_4->raise();
-
-        verticalLayout_3->addWidget(searchFrame);
-
         centralFrame = new QFrame(baseFrame);
         centralFrame->setObjectName(QString::fromUtf8("centralFrame"));
         centralFrame->setFrameShape(QFrame::StyledPanel);
@@ -716,7 +719,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
-        tableWidget->setAlternatingRowColors(false);
+        tableWidget->setAlternatingRowColors(true);
         tableWidget->setSelectionMode(QAbstractItemView::ExtendedSelection);
 
         horizontalLayout_11->addWidget(tableWidget);
@@ -750,8 +753,6 @@ public:
         menuEdit->setObjectName(QString::fromUtf8("menuEdit"));
         menuView = new QMenu(menuBar);
         menuView->setObjectName(QString::fromUtf8("menuView"));
-        menuTools = new QMenu(menuBar);
-        menuTools->setObjectName(QString::fromUtf8("menuTools"));
         menuHelp = new QMenu(menuBar);
         menuHelp->setObjectName(QString::fromUtf8("menuHelp"));
         MainWindow->setMenuBar(menuBar);
@@ -773,20 +774,19 @@ public:
         menuBar->addAction(menuFile->menuAction());
         menuBar->addAction(menuEdit->menuAction());
         menuBar->addAction(menuView->menuAction());
-        menuBar->addAction(menuTools->menuAction());
         menuBar->addAction(menuHelp->menuAction());
         menuFile->addSeparator();
         menuFile->addAction(actionPrint);
         menuFile->addAction(actionExport_To_HTML);
+        menuFile->addSeparator();
         menuFile->addAction(actionExit);
         menuEdit->addAction(actionCopy);
         menuView->addAction(actionFonts);
+        menuView->addSeparator();
         menuView->addAction(actionZoom_in);
         menuView->addAction(actionZoom_out);
-        menuTools->addAction(actionPreferences);
         menuHelp->addAction(actionSuggest_New);
         menuHelp->addAction(actionAbout_the_program);
-        menuHelp->addAction(actionManual);
         menuHelp->addSeparator();
         menuHelp->addAction(actionCheck_for_update);
         mainToolBar->addAction(actionFonts);
@@ -811,7 +811,6 @@ public:
         actionFonts->setText(QApplication::translate("MainWindow", "Fonts", 0, QApplication::UnicodeUTF8));
         actionPreferences->setText(QApplication::translate("MainWindow", "preferences", 0, QApplication::UnicodeUTF8));
         actionAbout_the_program->setText(QApplication::translate("MainWindow", "About the program", 0, QApplication::UnicodeUTF8));
-        actionManual->setText(QApplication::translate("MainWindow", "Manual", 0, QApplication::UnicodeUTF8));
         actionSupreme_Council_of_the_Arabic_language->setText(QApplication::translate("MainWindow", "About Supreme Council of the Arabic language", 0, QApplication::UnicodeUTF8));
         actionZoom_in->setText(QApplication::translate("MainWindow", "Zoom in", 0, QApplication::UnicodeUTF8));
         actionZoom_out->setText(QApplication::translate("MainWindow", "Zoom out", 0, QApplication::UnicodeUTF8));
@@ -826,6 +825,13 @@ public:
         actionPrintPreview->setToolTip(QApplication::translate("MainWindow", "Print preview", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
         label->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Welcome to Daleel!</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        ArButton->setText(QApplication::translate("MainWindow", "\330\271\330\261\330\250\331\212", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\"> - </span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        FRButton->setText(QApplication::translate("MainWindow", "Fran\303\247ais", 0, QApplication::UnicodeUTF8));
+        searchLineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Search here (example: Write)", 0, QApplication::UnicodeUTF8));
+        searchButton->setText(QString());
+        showAlphabetButton->setText(QApplication::translate("MainWindow", "Show Alphabet +", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QString());
         label_3->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Choose a letter:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         seenButton->setText(QApplication::translate("MainWindow", "A", 0, QApplication::UnicodeUTF8));
         zayButton->setText(QApplication::translate("MainWindow", "B", 0, QApplication::UnicodeUTF8));
@@ -853,12 +859,6 @@ public:
         sheenButton->setText(QApplication::translate("MainWindow", "X", 0, QApplication::UnicodeUTF8));
         yaaButton->setText(QApplication::translate("MainWindow", "X", 0, QApplication::UnicodeUTF8));
         wawButton->setText(QApplication::translate("MainWindow", "Z", 0, QApplication::UnicodeUTF8));
-        searchLineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Search here (example: Write)", 0, QApplication::UnicodeUTF8));
-        searchButton->setText(QString());
-        showAlphabetButton->setText(QApplication::translate("MainWindow", "Show Alphabet +", 0, QApplication::UnicodeUTF8));
-        ArButton->setText(QApplication::translate("MainWindow", "\330\271\330\261\330\250\331\212", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\"> - </span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        FRButton->setText(QApplication::translate("MainWindow", "Fran\303\247ais", 0, QApplication::UnicodeUTF8));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "French", 0, QApplication::UnicodeUTF8));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
@@ -866,7 +866,6 @@ public:
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0, QApplication::UnicodeUTF8));
         menuEdit->setTitle(QApplication::translate("MainWindow", "Edit", 0, QApplication::UnicodeUTF8));
         menuView->setTitle(QApplication::translate("MainWindow", "View", 0, QApplication::UnicodeUTF8));
-        menuTools->setTitle(QApplication::translate("MainWindow", "Tools", 0, QApplication::UnicodeUTF8));
         menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

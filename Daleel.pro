@@ -21,14 +21,17 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     updates.cpp \
-    printing/textprinter.cpp
+    printing/textprinter.cpp \
+    about.cpp
 
 HEADERS  += mainwindow.h \
     updates.h \
-    printing/textprinter.h
+    printing/textprinter.h \
+    about.h
 
 FORMS    += mainwindow.ui \
-    updates.ui
+    updates.ui \
+    about.ui
 
 RESOURCES += \
     resources.qrc
