@@ -27,3 +27,32 @@
 	<li><a href="http://sourceforge.net/projects/nibras/files/Nibras-StudentGuideTech0.3.pdf/download"><strong>تحميل  الكتاب</strong></a></li>
 	<li><a href="https://github.com/01walid/Nibras">تحميل المصدر</a></li>
 </ul> 
+
+#ENGLISH
+###Welcome to  NIBRAS homepage:
+Nibras, is a guide to help students of the first year in technical university, it contains the most important terms and vocabulary of this important year. <br> This glossary contains more than 2160 term, we try to cover the areas of technical first year of college.<br> The guide comes in two forms, a program for terms, who also allows to propose new terms.
+
+
+![wp-image-528](http://tahadz.files.wordpress.com/2012/09/nibras.png)
+
+ and a [Book](http://sourceforge.net/projects/nibras/files/Nibras-StudentGuideTech0.3.pdf/download)  Allowed for printing and distribution to students.
+
+![techguide](http://tahadz.files.wordpress.com/2012/07/techguide.png)
+
+
+### Advantages of the program  
+ 
+* The program is open source  
+* Search Directory is in Arabic, French, and parts of the worlds  
+* Export search results to HTML  
+* Print search results and copy them  
+* check for updates for the program and the dictionary  
+* Cross-platform (Windows, Linux)  
+* The ability to add new terms  
+
+
+### Download  
+ 
+* [download search program](http://sourceforge.net/projects/nibras/files)
+* [download the Book](http://sourceforge.net/projects/nibras/files/Nibras-StudentGuideTech0.3.pdf/download) 
+* [download the source](https://github.com/01walid/Nibras)  
